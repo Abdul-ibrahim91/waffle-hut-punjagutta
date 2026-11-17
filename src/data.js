@@ -1,38 +1,61 @@
-// Single source of truth for all Waffle Hut business data.
+// Single source of truth for all Keep Wafflin - Waffle Hut business data.
 export const business = {
-  name: 'Waffle Hut',
-  locality: 'Punjagutta',
-  tagline: 'Premium Waffles, Shakes & Decadent Desserts • Irrum Manzil Mall',
-  rating: '4.4',
-  reviews: '141+',
-  ratingLine: '4.4 ★ (141+ Google Reviews)',
-  mall: 'Irrum Manzil Mall / Next Premia Mall',
-  addressShort: 'Irrum Manzil Mall, Level 5, Punjagutta, Hyderabad 500082',
+  name: 'Keep Wafflin - Waffle Hut',
+  locality: 'Narayanguda',
+  landmark: 'Opp. Deepak Theatre',
+  navSubtitle: 'Narayanguda • Opp. Deepak Theatre',
+  tagline: 'Premium Waffles, Shakes & Decadent Desserts • Narayanguda',
+  rating: '4.7',
+  ratingLine: '4.7 ★ Google Reviews',
+  addressShort:
+    '3-4-627/A, Opp. Deepak Theatre, Chitrapuri Colony, Narayanguda, Hyderabad 500027',
   addressLines: [
-    'Irrum Manzil Mall / Next Premia Mall, Level 5',
-    'Irram Manzil Colony, Punjagutta',
-    'Hyderabad, Telangana 500082',
+    '3-4-627/A, Opp. Deepak Theatre',
+    'Chitrapuri Colony, Lingampally, Narayanguda',
+    'Hyderabad, Telangana 500027',
   ],
-  hours: 'Open Daily • Closes at 10:30 PM',
-  closingLabel: '10:30 PM',
-  // Only the closing time is published for this outlet; the opening hour below is
-  // used purely to drive the live "Open / Closed" pill.
+  hours: 'Open Daily • Closes 12:00 AM',
+  closingLabel: '12:00 AM',
+  // Only the midnight closing time is published for this outlet; the opening hour
+  // below is used purely to drive the live "Open / Closed" pill.
   opensAt: { hour: 11, minute: 0, label: '11:00 AM' },
-  closesAt: { hour: 22, minute: 30 },
-  serviceModes: ['Dine-In', 'Takeaway', 'Mall Dining'],
-  phoneDisplay: '+91 97015 37511',
-  phoneLocal: '097015 37511',
-  phoneHref: 'tel:+919701537511',
-  whatsappNumber: '919701537511',
+  closesAt: { hour: 24, minute: 0 },
+  serviceModes: ['Dine-In', 'Takeaway', 'Late-Night Dining'],
+  phoneDisplay: '+91 72070 47700',
+  phoneLocal: '072070 47700',
+  phoneHref: 'tel:+917207047700',
+  whatsappNumber: '917207047700',
   whatsappHref:
-    "https://wa.me/919701537511?text=Hi%20Waffle%20Hut%20Punjagutta!%20I'd%20like%20to%20place%20an%20order.",
+    "https://wa.me/917207047700?text=Hi%20Keep%20Wafflin%20-%20Waffle%20Hut%20Narayanguda!%20I'd%20like%20to%20place%20a%20direct%20order.",
   mapsHref:
-    'https://www.google.com/maps/search/?api=1&query=Waffle+Hut+Irrum+Manzil+Mall+Punjagutta+Hyderabad',
+    'https://www.google.com/maps/search/?api=1&query=Keep+Wafflin+Waffle+Hut+Narayanguda+Hyderabad',
 }
 
-export const categories = ['All', 'Waffles', 'Mini Pancakes', 'Shakes & Treats']
+export const categories = ['All', 'Waffles', 'Mini Pancakes', 'Shakes & Treats', 'Savoury']
 
 export const menu = [
+  {
+    id: 'naughty-nutella-pancake',
+    name: 'Naughty Nutella Pancake',
+    category: 'Mini Pancakes',
+    price: 229,
+    badge: 'Signature',
+    description:
+      'Warm bite-sized pancakes buried under a flood of authentic Nutella and hazelnut crunch.',
+    image:
+      'https://images.unsplash.com/photo-1664350471028-34a1d2651366?auto=format&fit=crop&w=800&q=80',
+  },
+  {
+    id: 'peri-peri-fries',
+    name: 'Peri Peri Fries',
+    category: 'Savoury',
+    price: 149,
+    badge: 'Most Ordered',
+    description:
+      'Crispy golden fries tossed in fiery peri peri masala — the savoury break between desserts.',
+    image:
+      'https://images.unsplash.com/photo-1676566399758-51b0d3927d48?auto=format&fit=crop&w=800&q=80',
+  },
   {
     id: 'dark-fantasy-mini-pancakes',
     name: 'Dark Fantasy Mini Pancakes',
@@ -96,31 +119,31 @@ export const menu = [
 
 export const reviews = [
   {
-    id: 'aakash-r',
-    name: 'Aakash R.',
-    initials: 'AR',
+    id: 'rahul-v',
+    name: 'Rahul V.',
+    initials: 'RV',
     stars: 5,
     source: 'Google Review',
     quote:
-      'The menu offers a wide variety of options, and everything I tried was delicious. Super crispy waffles and amazing service!',
+      'Delicious food, super crispy waffles, and great peri peri fries. Easily one of the best hangout spots in Narayanguda!',
   },
   {
-    id: 'priya-s',
-    name: 'Priya S.',
-    initials: 'PS',
+    id: 'sneha-m',
+    name: 'Sneha M.',
+    initials: 'SM',
     stars: 5,
     source: 'Google Review',
     quote:
-      'Best dessert spot in Irrum Manzil Mall. The Dark Fantasy mini pancakes and chocolate sandwiches are an absolute must-try!',
+      'Really good food and an aesthetic ambiance. The Naughty Nutella Pancake is worth every rupee!',
   },
   {
-    id: 'kiran-kumar',
-    name: 'Kiran Kumar',
-    initials: 'KK',
+    id: 'karthik-r',
+    name: 'Karthik R.',
+    initials: 'KR',
     stars: 5,
     source: 'Google Review',
     quote:
-      'Great atmosphere, lovely lighting, and amazing service. Perfect spot for a quick sweet treat in Punjagutta.',
+      'Great customer service and lovely late-night vibe right opposite Deepak Theatre. Overall a really nice experience.',
   },
 ]
 

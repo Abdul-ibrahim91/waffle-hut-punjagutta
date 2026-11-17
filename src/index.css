@@ -12,9 +12,14 @@
     -webkit-tap-highlight-color: transparent;
   }
 
+  html,
+  body {
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+
   body {
     @apply bg-midnight font-sans text-amber-50/90 antialiased;
-    overflow-x: hidden;
   }
 
   ::selection {

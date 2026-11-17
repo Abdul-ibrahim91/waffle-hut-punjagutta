@@ -60,7 +60,7 @@ function ReviewCard({ review }) {
 
 export default function Reviews() {
   return (
-    <section id="reviews" className="relative scroll-mt-24 pb-16 sm:pb-24">
+    <section id="reviews" className="relative scroll-mt-24 overflow-hidden pb-16 sm:pb-24">
       {/* Ambient warmth behind the grid */}
       <div
         aria-hidden="true"
@@ -95,8 +95,7 @@ export default function Reviews() {
         </div>
 
         <p className="mt-7 text-center text-[11px] text-amber-100/40">
-          Based on {business.reviews} Google reviews for {business.name},{' '}
-          {business.locality}.
+          Based on verified Google reviews for {business.name}, {business.locality}.
         </p>
       </div>
     </section>

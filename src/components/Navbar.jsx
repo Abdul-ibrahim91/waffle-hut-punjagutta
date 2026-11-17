@@ -15,21 +15,25 @@ export default function Navbar() {
       }`}
     >
       <nav className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3 sm:px-6 sm:py-4">
-        <a href="#top" className="group flex items-center gap-2.5" aria-label="Waffle Hut home">
+        <a
+          href="#top"
+          className="group flex min-w-0 flex-1 items-center gap-2.5"
+          aria-label={`${business.name} home`}
+        >
           <span className="relative grid h-10 w-10 shrink-0 place-items-center rounded-xl border border-amber-500/30 bg-cocoa text-amber-400 shadow-gold transition group-hover:border-amber-400/60">
             <WaffleIcon className="h-5 w-5" />
           </span>
-          <span className="flex flex-col leading-none">
-            <span className="font-serif text-lg font-semibold tracking-tight text-amber-50 sm:text-xl">
+          <span className="flex min-w-0 flex-col leading-none">
+            <span className="truncate font-serif text-[15px] font-semibold tracking-tight text-amber-50 sm:text-xl">
               {business.name}
             </span>
-            <span className="mt-0.5 text-[10px] font-medium uppercase tracking-[0.22em] text-amber-500/70">
-              {business.locality}
+            <span className="mt-1 truncate text-[9px] font-medium uppercase tracking-[0.14em] text-amber-500/70 sm:text-[10px] sm:tracking-[0.18em]">
+              {business.navSubtitle}
             </span>
           </span>
         </a>
 
-        <div className="flex items-center gap-2 sm:gap-3">
+        <div className="flex shrink-0 items-center gap-2 sm:gap-3">
           <span
             className="hidden items-center gap-2 rounded-full border border-emerald-400/25 bg-emerald-500/10 px-3 py-1.5 text-[11px] font-semibold text-emerald-300 backdrop-blur-md sm:flex"
             aria-live="polite"
@@ -75,7 +79,7 @@ export default function Navbar() {
             }`}
           />
         </span>
-        {status.label} · {business.mall.split(' / ')[0]}
+        {status.label} · {business.landmark}
       </div>
     </header>
   )

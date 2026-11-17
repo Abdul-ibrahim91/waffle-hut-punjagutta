@@ -19,7 +19,7 @@ export default function Hero() {
           {/* Copy */}
           <div className="animate-fade-up">
             <span className="inline-flex items-center gap-2 rounded-full border border-amber-500/25 bg-cocoa/70 px-3.5 py-1.5 text-[11px] font-medium tracking-wide text-amber-200/90 backdrop-blur-md sm:text-xs">
-              ✨ Next Premia Mall • Punjagutta, Hyderabad
+              ✨ Narayanguda • Opp. Deepak Theatre, Hyderabad
             </span>
 
             <h1 className="mt-5 font-serif text-[2.6rem] font-bold leading-[1.04] tracking-tight text-amber-50 sm:text-6xl lg:text-[4.2rem]">
@@ -31,7 +31,8 @@ export default function Hero() {
 
             <p className="mt-5 max-w-xl text-[15px] leading-relaxed text-amber-100/60 sm:text-base">
               Freshly baked, crispy-outside waffles loaded with rich chocolate and premium
-              toppings. Visit us on Level 5 at Irrum Manzil Mall.
+              toppings. Find us right opposite Deepak Theatre in Narayanguda, open till
+              midnight.
             </p>
 
             <div className="mt-7 flex flex-col gap-3 sm:flex-row sm:items-center">
@@ -59,9 +60,9 @@ export default function Hero() {
               <span className="flex items-center gap-1.5">
                 <StarIcon className="h-3.5 w-3.5 text-amber-400" />
                 <strong className="font-semibold text-amber-100/80">{business.rating} ★</strong>
-                ({business.reviews} Google Reviews)
+                (Google Reviews)
               </span>
-              <span className="h-3 w-px bg-amber-500/20" />
+              <span className="hidden h-3 w-px bg-amber-500/20 sm:block" />
               <span>{business.serviceModes.join(' • ')}</span>
             </div>
           </div>
@@ -72,7 +73,7 @@ export default function Hero() {
               <div className="aspect-[4/5] w-full sm:aspect-[5/5] lg:aspect-[4/5]">
                 <img
                   src={heroImage}
-                  alt="Loaded Belgian chocolate waffle topped with ice cream at Waffle Hut, Punjagutta"
+                  alt="Loaded Belgian chocolate waffle topped with ice cream at Keep Wafflin - Waffle Hut, Narayanguda"
                   loading="eager"
                   className="h-full w-full object-cover"
                 />
@@ -92,10 +93,10 @@ export default function Hero() {
                   </span>
                   <div>
                     <p className="font-serif text-base font-semibold text-amber-50 sm:text-lg">
-                      4.4 ★ Rated by Mall Shoppers
+                      4.7 ★ Rated by Dessert Lovers
                     </p>
                     <p className="text-[11px] font-medium uppercase tracking-[0.16em] text-amber-400/80">
-                      in Punjagutta
+                      in Narayanguda
                     </p>
                   </div>
                 </div>
@@ -103,7 +104,7 @@ export default function Hero() {
 
               {/* Floating hours chip */}
               <div className="absolute right-4 top-4 rounded-full border border-amber-500/25 bg-black/40 px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[0.14em] text-amber-200 backdrop-blur-md">
-                Level 5 • Open till 10:30 PM
+                Open Daily • Closes 12:00 AM
               </div>
             </div>
           </div>
@@ -119,7 +120,7 @@ export default function Hero() {
           <span className="text-amber-500/40">◆</span>
           <span>Thick Shakes</span>
           <span className="text-amber-500/40">◆</span>
-          <span>Mall Dining</span>
+          <span>Peri Peri Fries</span>
         </div>
       </div>
     </section>

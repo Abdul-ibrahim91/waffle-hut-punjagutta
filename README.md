@@ -1,7 +1,8 @@
-# Waffle Hut — Punjagutta, Hyderabad
+# Keep Wafflin - Waffle Hut — Narayanguda, Hyderabad
 
-Luxury, mobile-first single-page site for **Waffle Hut**, Irrum Manzil Mall (Next Premia Mall),
-Level 5, Punjagutta, Hyderabad. Built with React 18 + Vite 5 + Tailwind CSS 3.
+Luxury, mobile-first single-page site for **Keep Wafflin - Waffle Hut**, 3-4-627/A opposite
+Deepak Theatre, Chitrapuri Colony, Lingampally, Narayanguda, Hyderabad 500027.
+Built with React 18 + Vite 5 + Tailwind CSS 3.
 
 ## Run it
 
@@ -48,15 +49,18 @@ the grid.
 ## How ordering works
 
 No backend, no payments. Tapping **+ Add to WhatsApp Order** builds a local cart; the floating
-bar opens a drawer, and **Send Order to WhatsApp** opens `wa.me/919701537511` with the items,
+bar opens a drawer, and **Send Order to WhatsApp** opens `wa.me/917207047700` with the items,
 quantities and total pre-filled as a message. The customer still presses send in WhatsApp.
 
 ## Notes
 
-- Hours: only the 10:30 PM closing time is published for this outlet. The live status pill
+- Hours: only the 12:00 AM closing time is published for this outlet. The live status pill
   assumes an **11:00 AM** opening (`business.opensAt` in `src/data.js`) — change it if the real
   opening time differs.
-- Menu prices (₹159–₹289) are realistic placeholders in the requested ₹150–₹300 band; confirm
+- The Google rating (4.7) is shown without a review count, since no verified count was
+  available for the Narayanguda outlet. To show one, add it back in `src/data.js`.
+- Menu prices (₹149–₹289) are realistic placeholders; Peri Peri Fries sits just below the
+  ₹150–₹300 dessert band. Confirm
   against the current in-store menu before going live.
 - Food photography is from Unsplash hotlinks. For production, replace `image` / `heroImage` in
   `src/data.js` with the café's own photos placed in `public/`.

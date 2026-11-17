@@ -3,7 +3,7 @@ import { business } from './data.js'
 
 /**
  * Live open/closed state for the outlet, evaluated in IST so the pill is
- * correct for the Punjagutta store no matter where the visitor is.
+ * correct for the Narayanguda store no matter where the visitor is.
  */
 export function useStoreStatus() {
   const [now, setNow] = useState(() => new Date())
@@ -97,7 +97,7 @@ export function useCart() {
   /** Builds the pre-filled WhatsApp message and opens the chat. */
   const sendToWhatsApp = () => {
     const lines = [
-      `Hi ${business.name} ${business.locality}! I'd like to place an order:`,
+      `Hi ${business.name} ${business.locality}! I'd like to place a direct order:`,
       '',
       ...items.map((i) => `• ${i.qty} × ${i.name} — ₹${i.qty * i.price}`),
       '',

@@ -18,15 +18,15 @@ export default function Location() {
           <div className="relative grid gap-10 lg:grid-cols-2 lg:gap-14">
             <div>
               <span className="text-[11px] font-semibold uppercase tracking-[0.3em] text-amber-500/80">
-                The Mall Caf&eacute; Experience
+                The Late-Night Caf&eacute; Experience
               </span>
               <h2 className="mt-3 font-serif text-3xl font-bold leading-tight text-amber-50 sm:text-4xl">
-                Find us on <span className="gold-text italic">Level 5.</span>
+                Find us <span className="gold-text italic">opposite Deepak Theatre.</span>
               </h2>
               <p className="mt-4 max-w-md text-sm leading-relaxed text-amber-100/55">
-                A warm, low-lit dessert lounge tucked inside Irrum Manzil Mall &mdash; the
-                easiest stop for shoppers, late-evening cravings and after-dinner sweets in
-                Punjagutta.
+                A warm, low-lit dessert lounge on the Narayanguda main road &mdash; the
+                easiest stop for late-night cravings, after-show desserts and post-dinner
+                sweets in Chitrapuri Colony.
               </p>
 
               <div className="mt-7 space-y-4">
@@ -114,7 +114,7 @@ export default function Location() {
               </a>
 
               <p className="text-center text-[11px] leading-relaxed text-amber-100/40">
-                Parking available at the mall &bull; Lift access to Level 5
+                Street parking available &bull; Walk-in seating till midnight
               </p>
             </div>
           </div>
