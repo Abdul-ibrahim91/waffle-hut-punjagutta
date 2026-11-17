@@ -48,7 +48,7 @@ the grid.
 ## How ordering works
 
 No backend, no payments. Tapping **+ Add to WhatsApp Order** builds a local cart; the floating
-bar opens a drawer, and **Send Order to WhatsApp** opens `wa.me/919676261472` with the items,
+bar opens a drawer, and **Send Order to WhatsApp** opens `wa.me/919701537511` with the items,
 quantities and total pre-filled as a message. The customer still presses send in WhatsApp.
 
 ## Notes

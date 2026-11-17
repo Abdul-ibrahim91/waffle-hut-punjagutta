@@ -20,12 +20,12 @@ export const business = {
   opensAt: { hour: 11, minute: 0, label: '11:00 AM' },
   closesAt: { hour: 22, minute: 30 },
   serviceModes: ['Dine-In', 'Takeaway', 'Mall Dining'],
-  phoneDisplay: '+91 96762 61472',
-  phoneLocal: '096762 61472',
-  phoneHref: 'tel:+919676261472',
-  whatsappNumber: '919676261472',
+  phoneDisplay: '+91 97015 37511',
+  phoneLocal: '097015 37511',
+  phoneHref: 'tel:+919701537511',
+  whatsappNumber: '919701537511',
   whatsappHref:
-    "https://wa.me/919676261472?text=Hi%20Waffle%20Hut%20Punjagutta!%20I'd%20like%20to%20place%20an%20order.",
+    "https://wa.me/919701537511?text=Hi%20Waffle%20Hut%20Punjagutta!%20I'd%20like%20to%20place%20an%20order.",
   mapsHref:
     'https://www.google.com/maps/search/?api=1&query=Waffle+Hut+Irrum+Manzil+Mall+Punjagutta+Hyderabad',
 }
